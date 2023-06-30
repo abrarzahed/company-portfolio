@@ -6,7 +6,7 @@ export default function HeroSection() {
     <div className="hero-section relative">
       <div className="section-container">
         <div className="section-box hero-box">
-          <div className="section-box-left">
+          <div className="section-box-text">
             <p className="text-sm lg:text-lg">Welcome to MD Infotech!</p>
             <h3 className="text-xl text-center md:text-left md:text-5xl">
               Hungry For Challenges <br /> <b>Impact and More!</b>
@@ -19,7 +19,7 @@ export default function HeroSection() {
               Learn More
             </button>
           </div>
-          <div className="hero-right">
+          <div className="section-box-right hero-right">
             <Image
               className="hero-image"
               src={heroImage}
