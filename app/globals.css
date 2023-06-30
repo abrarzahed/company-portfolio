@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.section-container {
+  @apply max-w-7xl mx-auto px-4;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.section-box {
+  @apply flex flex-col md:flex-row  justify-center md:justify-between md:items-center py-24 px-4;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
+.hero-box {
+  @apply pt-40;
+}
+.hero-section {
+  @apply bg-[#086ad8] text-white isolate;
+  background: #086ad8;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    rgba(9, 70, 139, 1) 0%,
+    rgba(30, 132, 246, 1) 100%
+  ) !important;
+}
+
+image {
+  @apply max-w-[100%] object-cover;
+}
+
+.hero-shape {
+  z-index: -1;
+  @apply absolute bottom-0 w-full left-0 right-0;
+}
+.section-box-left {
+  @apply flex flex-col gap-6 items-center md:items-start;
+}
+.section-box-left hr {
+  @apply w-[160px] h-[2px] bg-[#497ab3] border-0;
+}
+.hero-right {
+  transform: scale(-1, 1.15);
+}
+.hero-image {
+  @apply mt-20 md:mt-0 w-[300px] md:w-full;
 }
