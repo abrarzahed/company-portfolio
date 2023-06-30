@@ -9,6 +9,21 @@ export default function About() {
     <div className="section-container">
       <div className="section-box">
         <div className="section-box-left about-us-left">
+          <div className="about-logo-title-small-screen md:hidden grid justify-center text-center mb-10">
+            <Image
+              className="mini-logo-image mb-2 mx-auto"
+              src={miniLogo}
+              alt="small logo"
+            />
+            <h3 className="text-[#003EAC] text-3xl font-extrabold ">
+              About Us
+            </h3>
+            <Image
+              className="divider-image"
+              src={customDivider}
+              alt="small logo"
+            />
+          </div>
           <Image
             className="about-image "
             src={aboutImage}
@@ -17,14 +32,22 @@ export default function About() {
             height={600}
           />
         </div>
-        <div className="section-box-text about-us-text md:w-[45%] ">
-          <Image className="thumb-image " src={miniLogo} alt="small logo" />
-          <h3 className="text-[#003EAC] text-3xl font-extrabold ">About Us</h3>
-          <Image
-            className="divider-image"
-            src={customDivider}
-            alt="small logo"
-          />
+        <div className="section-box-text about-us-text md:w-[50%] mt-12">
+          <div className="about-logo-title-large-screen hidden md:block">
+            <Image
+              className="mini-logo-image mb-3"
+              src={miniLogo}
+              alt="small logo"
+            />
+            <h3 className="text-[#003EAC] text-3xl font-extrabold ">
+              About Us
+            </h3>
+            <Image
+              className="divider-image"
+              src={customDivider}
+              alt="small logo"
+            />
+          </div>
           <p className="text-justify">
             MD Infotech is a cutting-edge IT business. It offers a wide range of
             IT services and products on a local and global level. We take note

@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.navbar {
+  background: url("../public/counter-background_2_wkepaf.png"), #fff;
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
 .hero-section {
   @apply bg-[#086ad8] text-white isolate;
   background: #086ad8;
@@ -46,6 +51,34 @@ image {
   width: 60px;
 }
 .divider-image {
-  margin-top: -20px;
+  /* margin-top: -20px; */
   width: 140px;
 }
+
+/* **************************************** 
+COMMENT: services section  
+***************************************** */
+.services-container {
+  background: url("../public/counter-background_2_wkepaf.png"), #fff;
+  background-size: 180%;
+  background-position: -140% -300%;
+  padding: 100px 1rem;
+}
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+.service-card {
+  @apply p-8 bg-white;
+  box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.service-card .service-card-title {
+  @apply font-bold text-xl text-gray-800;
+}
+/* .service-card .service-card-image {
+} */

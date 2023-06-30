@@ -41,10 +41,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 w-full ease-in duration-300 bg-white">
+    <div className="fixed  top-0 w-full ease-in duration-300 bg-white">
       <nav className="">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-30 py-1">
+        <div className="max-w-7xl navbar mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-30">
             <div className="logo">
               <Link href="/" onClick={closeMenu}>
                 <Image width={200} src={logo} />
