@@ -76,6 +76,7 @@ COMMENT: services section
   place-items: center;
   text-align: center;
   gap: 1rem;
+  border-radius: 8px;
 }
 .service-card .service-card-title {
   @apply font-bold text-xl text-gray-800;

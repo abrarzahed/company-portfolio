@@ -3,6 +3,7 @@
 import About from "@/components/About";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Quote from "@/components/Quote";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Quote />
       <WhyUs />
+      <Projects />
     </>
   );
 }
