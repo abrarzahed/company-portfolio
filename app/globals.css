@@ -20,7 +20,7 @@
   @apply max-w-7xl mx-auto px-4;
 }
 .section-box {
-  @apply flex  flex-col items-center md:flex-row  justify-center md:justify-between md:items-center py-24 px-4;
+  @apply flex flex-col items-center md:flex-row  justify-center md:justify-between md:items-center py-24 px-4;
 }
 .hero-box {
   @apply pt-40;
@@ -80,5 +80,31 @@ COMMENT: services section
 .service-card .service-card-title {
   @apply font-bold text-xl text-gray-800;
 }
-/* .service-card .service-card-image {
-} */
+
+@media (max-width: 540px) {
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* **************************************** 
+COMMENT: quote section   
+***************************************** */
+.quote-container {
+  @apply text-white relative;
+  background: url("../public/asset39.jpeg");
+  background-size: cover;
+  background-position: center center;
+  isolation: isolate;
+}
+.quote-container::after {
+  background: linear-gradient(to right, #003da1, #007eff);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}

@@ -3,6 +3,7 @@
 import About from "@/components/About";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Quote from "@/components/Quote";
 import Services from "@/components/Services";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Services />
+      <Quote />
     </>
   );
 }
